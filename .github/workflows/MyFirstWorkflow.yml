@@ -16,6 +16,5 @@ jobs:
           echo " Current branch is '${{ github.ref }}'."
       - name: checkout repo
         uses: actions/checkout@v4
-          run:|
-            tree
+          - run:tree
         
