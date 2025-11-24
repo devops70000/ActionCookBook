@@ -12,9 +12,10 @@ jobs:
       steps:
       - name: Greet the user
         run: |
-          echo "Hello world" from ${{ github.actor }}."
-          echo " Current branch is '${{ github.ref }}'."
+          echo "Hello world from ${{ github.actor }}"
+          echo " Current branch is ${{ github.ref }}"
       - name: checkout repo
         uses: actions/checkout@v4
-          - run:tree
+      - name: list files
+        run: tree
         
